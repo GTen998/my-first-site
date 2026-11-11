@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Digital | Modern Web & Business Solutions</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#3b82f6',
+            brandDark: '#1d4ed8',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased">
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="sticky top-0 z-40 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center font-black text-white">A</div>
+          <span class="text-xl font-bold tracking-tight text-white">Apex<span class="text-blue-500">Digital</span></span>
+        </div>
+        
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
+          <a href="#services" class="hover:text-blue-400 transition">Services</a>
+          <a href="#calculator" class="hover:text-blue-400 transition">Price Calculator</a>
+          <a href="#faq" class="hover:text-blue-400 transition">FAQ</a>
+          <a href="#contact" class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg transition shadow-lg shadow-blue-600/30">Get in Touch</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobileMenu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-4 pt-2 pb-4 space-y-2">
+      <a href="#services" class="block py-2 text-slate-300 hover:text-blue-400">Services</a>
+      <a href="#calculator" class="block py-2 text-slate-300 hover:text-blue-400">Price Calculator</a>
+      <a href="#faq" class="block py-2 text-slate-300 hover:text-blue-400">FAQ</a>
+      <a href="#contact" class="block py-2 text-blue-400 font-semibold">Get in Touch</a>
+    </div>
+  </nav>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="relative pt-20 pb-28 px-4 text-center overflow-hidden">
+    <div class="max-w-4xl mx-auto">
+      <span class="inline-block py-1 px-3 rounded-full bg-blue-500/10 text-blue-400 text-xs font-semibold uppercase tracking-wider mb-4 border border-blue-500/20">
+        High-Performance Websites & Lead Systems
+      </span>
+      <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+        Turn Your Local Business Into a <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Customer Magnet</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-slate-400 mb-8 max-w-2xl mx-auto">
+        We build ultra-fast, modern websites designed to turn Google searches into phone calls, bookings, and direct WhatsApp messages.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="#calculator" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold shadow-lg shadow-blue-600/30 transition">
+          Calculate Your Price
+        </a>
+        <a href="#contact" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold border border-slate-700 transition">
+          Request Consultation
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES SECTION ================= -->
+  <section id="services" class="py-20 bg-slate-900/50 border-y border-slate-800/80 px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-white mb-4">What We Build For You</h2>
+        <p class="text-slate-400">Everything your business needs to win online.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Service Card 1 -->
+        <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:border-blue-500/50 transition">
+          <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center text-blue-400 font-bold text-xl mb-6">⚡</div>
+          <h3 class="text-xl font-bold text-white mb-3">Ultra-Fast Landing Pages</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Loads in under 1 second. Clean mobile layout that ensures customers never leave due to slow loading.
+          </p>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:border-blue-500/50 transition">
+          <div class="w-12 h-12 bg-cyan-500/10 rounded-xl flex items-center justify-center text-cyan-400 font-bold text-xl mb-6">💬</div>
+          <h3 class="text-xl font-bold text-white mb-3">Instant WhatsApp Leads</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Direct click-to-chat triggers so prospective buyers can reach your phone instantly with pre-written inquiries.
+          </p>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:border-blue-500/50 transition">
+          <div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center text-emerald-400 font-bold text-xl mb-6">📍</div>
+          <h3 class="text-xl font-bold text-white mb-3">Google Maps & Local SEO</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Get your business registered and ranked on Google Maps so local customers find you first.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= INTERACTIVE FUNCTION: PRICE CALCULATOR ================= -->
+  <section id="calculator" class="py-20 px-4">
+    <div class="max-w-2xl mx-auto bg-slate-900 p-8 rounded-3xl border border-slate-800 shadow-2xl">
+      <h2 class="text-2xl sm:text-3xl font-bold text-center text-white mb-2">Estimate Your Project Cost</h2>
+      <p class="text-center text-slate-400 text-sm mb-8">Select what your business needs and get an instant estimate.</p>
+
+      <div class="space-y-4 mb-8">
+        <!-- Option 1 -->
+        <label class="flex items-center justify-between p-4 bg-slate-950 rounded-xl border border-slate-800 cursor-pointer hover:border-slate-700 transition">
+          <div class="flex items-center gap-3">
+            <input type="checkbox" id="itemLanding" class="price-check w-5 h-5 accent-blue-600 rounded" value="5000" checked>
+            <div>
+              <div class="font-semibold text-white">Modern 1-Page Landing Page</div>
+              <div class="text-xs text-slate-400">Fast, mobile-friendly design</div>
+            </div>
+          </div>
+          <span class="font-bold text-blue-400">Rs. 5,000</span>
+        </label>
+
+        <!-- Option 2 -->
+        <label class="flex items-center justify-between p-4 bg-slate-950 rounded-xl border border-slate-800 cursor-pointer hover:border-slate-700 transition">
+          <div class="flex items-center gap-3">
+            <input type="checkbox" id="itemMaps" class="price-check w-5 h-5 accent-blue-600 rounded" value="2000">
+            <div>
+              <div class="font-semibold text-white">Google Maps & Business Setup</div>
+              <div class="text-xs text-slate-400">Helps tourists and locals find you</div>
+            </div>
+          </div>
+          <span class="font-bold text-blue-400">Rs. 2,000</span>
+        </label>
+
+        <!-- Option 3 -->
+        <label class="flex items-center justify-between p-4 bg-slate-950 rounded-xl border border-slate-800 cursor-pointer hover:border-slate-700 transition">
+          <div class="flex items-center gap-3">
+            <input type="checkbox" id="itemForm" class="price-check w-5 h-5 accent-blue-600 rounded" value="1500">
+            <div>
+              <div class="font-semibold text-white">Automated Inquiry Email Form</div>
+              <div class="text-xs text-slate-400">Customer messages sent to your inbox</div>
+            </div>
+          </div>
+          <span class="font-bold text-blue-400">Rs. 1,500</span>
+        </label>
+      </div>
+
+      <!-- Live Calculated Result -->
+      <div class="bg-blue-950/40 border border-blue-500/20 p-6 rounded-2xl flex items-center justify-between">
+        <div>
+          <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Estimated Total</span>
+          <div class="text-3xl font-extrabold text-white" id="totalPriceDisplay">Rs. 5,000</div>
+        </div>
+        <a href="#contact" class="px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm transition">
+          Lock In This Price
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= INTERACTIVE FUNCTION: FAQ ACCORDION ================= -->
+  <section id="faq" class="py-20 bg-slate-900/50 border-t border-slate-800 px-4">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-bold text-center text-white mb-10">Frequently Asked Questions</h2>
+
+      <div class="space-y-4">
+        <!-- FAQ Item 1 -->
+        <div class="border border-slate-800 rounded-xl bg-slate-900 overflow-hidden">
+          <button class="faq-btn w-full px-6 py-4 text-left font-semibold text-white flex justify-between items-center">
+            <span>How long does it take to finish the website?</span>
+            <span class="text-blue-400 transform transition-transform duration-200">+</span>
+          </button>
+          <div class="faq-content hidden px-6 pb-4 text-slate-400 text-sm">
+            Typically 2 to 4 days from when you provide your photos, business details, and contact numbers.
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="border border-slate-800 rounded-xl bg-slate-900 overflow-hidden">
+          <button class="faq-btn w-full px-6 py-4 text-left font-semibold text-white flex justify-between items-center">
+            <span>Are there monthly hosting fees?</span>
+            <span class="text-blue-400 transform transition-transform duration-200">+</span>
+          </button>
+          <div class="faq-content hidden px-6 pb-4 text-slate-400 text-sm">
+            No! We deploy on modern cloud infrastructure with zero recurring monthly hosting fees for small sites.
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="border border-slate-800 rounded-xl bg-slate-900 overflow-hidden">
+          <button class="faq-btn w-full px-6 py-4 text-left font-semibold text-white flex justify-between items-center">
+            <span>Can I edit my phone number or menu later?</span>
+            <span class="text-blue-400 transform transition-transform duration-200">+</span>
+          </button>
+          <div class="faq-content hidden px-6 pb-4 text-slate-400 text-sm">
+            Yes, we provide 30 days of free revisions and updates after launching your website.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= INTERACTIVE FUNCTION: CONTACT FORM WITH POPUP ================= -->
+  <section id="contact" class="py-20 px-4">
+    <div class="max-w-xl mx-auto bg-slate-900 p-8 rounded-3xl border border-slate-800 shadow-xl">
+      <h2 class="text-2xl font-bold text-white mb-2 text-center">Send Us a Message</h2>
+      <p class="text-sm text-slate-400 mb-6 text-center">We will message you on WhatsApp or call you back within 2 hours.</p>
+
+      <form id="leadForm" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Business Name</label>
+          <input type="text" required placeholder="e.g. Annapurna Trekking" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">WhatsApp or Phone Number</label>
+          <input type="tel" required placeholder="e.g. 9800000000" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">What do you need?</label>
+          <textarea rows="3" placeholder="Tell us about your business..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 rounded-xl transition shadow-lg shadow-blue-600/30">
+          Submit Inquiry
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- SUCCESS POPUP MODAL -->
+  <div id="successModal" class="hidden fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl max-w-sm w-full text-center shadow-2xl">
+      <div class="w-16 h-16 bg-emerald-500/10 text-emerald-400 rounded-full flex items-center justify-center text-3xl mx-auto mb-4">✓</div>
+      <h3 class="text-xl font-bold text-white mb-2">Message Received!</h3>
+      <p class="text-sm text-slate-400 mb-6">Thank you for reaching out. We will connect with you shortly on WhatsApp.</p>
+      <button id="closeModalBtn" class="w-full bg-slate-800 hover:bg-slate-700 text-white py-2.5 rounded-xl font-semibold transition">
+        Close
+      </button>
+    </div>
+  </div>
+
+  <!-- ================= FLOATING WHATSAPP BUTTON ================= -->
+  <!-- Change 9800000000 to your real WhatsApp number -->
+  <a href="https://wa.me/9779800000000?text=Hello,%20I%20am%20interested%20in%20a%20website" target="_blank" 
+     class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-400 text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition hover:scale-110">
+    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.071.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+    </svg>
+  </a>
+
+  <!-- ================= JAVASCRIPT LOGIC ================= -->
+  <script>
+    // 1. Mobile Menu Toggle
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // 2. Interactive Price Calculator
+    const checkboxes = document.querySelectorAll('.price-check');
+    const priceDisplay = document.getElementById('totalPriceDisplay');
+
+    function calculateTotal() {
+      let total = 0;
+      checkboxes.forEach(cb => {
+        if (cb.checked) {
+          total += parseInt(cb.value);
+        }
+      });
+      priceDisplay.textContent = 'Rs. ' + total.toLocaleString();
+    }
+
+    checkboxes.forEach(cb => cb.addEventListener('change', calculateTotal));
+
+    // 3. FAQ Accordion
+    const faqButtons = document.querySelectorAll('.faq-btn');
+    faqButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const content = btn.nextElementSibling;
+        const icon = btn.querySelector('span:last-child');
+        content.classList.toggle('hidden');
+        icon.textContent = content.classList.contains('hidden') ? '+' : '−';
+      });
+    });
+
+    // 4. Form Submission & Modal
+    const form = document.getElementById('leadForm');
+    const modal = document.getElementById('successModal');
+    const closeModal = document.getElementById('closeModalBtn');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault(); // Prevents page reload
+      modal.classList.remove('hidden');
+      form.reset();
+    });
+
+    closeModal.addEventListener('click', () => {
+      modal.classList.add('hidden');
+    });
+  </script>
+
+</body>
+</html>
